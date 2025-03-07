@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            background-image: url("./image/bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: sans-serif;
+        }
+
+        .main-container h1 {
+            padding: 0.5em 0;
+            text-align: center;
+            font-family: monospace;
+            font-weight: 600;
+            font-style: italic;
+            font-size: 3em;
+        }
+
+        nav {
+            width: 100%;
+            background-color: rgb(216, 215, 215);
+            margin: 1em 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            font-size: 1.5em;
+            padding: 0.8em;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            font-size: 1.2em;
+            color: blue;
+        }
+
+        #aboutme,
+        #projects,
+        #my-skills,
+        #contact-me,
+        .vedio {
+            padding: 2em;
+            margin: 1em;
+            width: 100%;
+        }
+
+        #aboutme h2,
+        #projects h2,
+        #my-skills h2,
+        #contact-me h2,
+        .vedio h2 {
+            color: red;
+            margin-bottom: 1em;
+            text-decoration: underline;
+        }
+
+
+
+        #aboutme p,
+        #my-skills table {
+            font-size: 1.2em;
+        }
+
+        .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            border: 1px solid black;
+            padding: 1em;
+            margin: 0.5em;
+            flex: 1 1 calc(25% - 1em);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            padding: 0.5em;
+            text-align: left;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            /* Stack form elements */
+        }
+
+        form input,
+        form textarea {
+            margin: 0.5em 0;
+            padding: 0.5em;
+            font-size: 1em;
+        }
+
+        form input[type="submit"] {
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: darkblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Assignmet-2</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#aboutme">About-Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#my-skills">Skills</a></li>
+                <li><a href="#contact-me">Contact-Me</a></li>
+
+            </ul>
+        </nav>
+
+        <div id="aboutme">
+            <h2>About-Me</h2>
+            <p>Hi, I'm Maheen Fayyaz, a frontend web developer passionate about creating visually appealing and
+                user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building
+                responsive, dynamic websites using modern frameworks like React and Vue.js. <br><br>
+                I enjoy turning creative ideas into functional, interactive experiences. I'm always excited to learn new
+                technologies and improve my skills. Let's build something amazing together!</p>
+        </div>
+
+        <div id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-list">
+                <div class="card">
+                    <img src="./image/portfolio.jpg" alt="Portfolio">
+                    <h3>portfolio website</h3>
+                    <p>A personal website to showcase my work.</p>
+                </div>
+                <div class="card">
+                    <img src="./image/weather.jpg" alt="Weather" >
+                    <h3>Weather Website</h3>
+                    <p>This is show the weather of all our the world.</p>
+                </div>
+                <div class="card">
+                    <img src="./image/to-do-list.png" alt="To-do-list" >
+                    <h3>To-do-list</h3>
+                    <p>An app to manage daily tasks efficiently</p>
+                </div>
+                <div class="card">
+                    <img src="./image/counter-app.png" alt="Counter" >
+                    <h3>Counter-app</h3>
+                    <p>An app contain counter to start, stop & restart.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="my-skills">
+            <h2>My-Skills</h2>
+            <table border="1" style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                <tr>
+                    <th>Skills</th>
+                    <th>Proficiency</th>
+                </tr>
+                <tr>
+                    <td>Office Automation</td>
+                    <td>Advance</td>
+                </tr>
+
+                <tr>
+                    <td>HTML</td>
+                    <td>Advance</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermediate</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Beginner</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="vedio">
+            <h2>vedio</h2>
+            <video width="320" height="240" controls>
+                <source src="./image/WhatsApp Video 2025-03-07 at 07.53.20_ce674047.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+        </div>
+        <div id="contact-me">
+            <h2>Contact-Me</h2>
+            <form>
+                <input type="text" placeholder="Your-Name" required>
+                <input type="email" placeholder="Your-Email" required>
+                <textarea name="message" placeholder="Type Your Message" required></textarea>
+
+                <input type="submit" value="Send Message">
+
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
