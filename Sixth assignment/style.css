@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    background-image: url("./image/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.heading{
+    padding: 0.5em 0;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 3em;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(216, 215, 215);
+    margin: 1em 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 1.5em;
+    padding: 0.8em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    font-size: 1.2em;
+    color: blue;
+}
+
+#aboutme,
+#projects,
+#my-skills,
+#contact-me,
+.vedio {
+    padding: 2em;
+    margin: 1em;
+    width: 100%;
+}
+
+.min-heading{
+    color: red;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+
+
+#aboutme p,
+#my-skills table {
+    font-size: 1.2em;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 1em;
+    margin: 0.5em;
+    flex: 1 1 calc(25% - 1em);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+form input[type="submit"] {
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: darkblue;
+}
