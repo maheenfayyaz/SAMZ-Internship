@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-container {
+            border: 1px solid black;
+            background: #000;
+            color: white;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            padding: 1em;
+        }
+        .main-container h1{
+            margin-bottom: 1em;
+            font-size: 2.5em;
+            font-family: cursive;
+        }
+        .main {
+            margin: auto;
+            background-color: rgb(165, 165, 165);
+            padding: 1em;
+
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .header img {
+            height: 200px;
+            margin-bottom: 1em;
+        }
+
+        h3{
+            color: rgb(209, 221, 35);
+            text-decoration: underline;
+            margin-bottom: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>My Resume</h1>
+        <div class="main">
+            <header class="header">
+                <img src="./images/red.jpeg" alt="my profile">
+                <h1>Maheen Fayyaz</h1>
+                <p><em>Frontend Developer || Passion for Coding & Design</em></p>
+            </header><br>
+
+            <div class="work-experience">
+                <h3>Work Experience</h3>
+                <table border="1px solid white">
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Years</th>
+                    </tr>
+                    <tr>
+                        <td>ABC Tech</td>
+                        <td>Frontend Developer</td>
+                        <td>2022 - Present</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ Solutions</td>
+                        <td>Web Designer</td>
+                        <td>2020 - 2022</td>
+                    </tr>
+                </table>
+            </div> <br>
+
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>UI/UX designer</li>
+                    <li>Frontend Developer</li>
+                </ul>
+            </div><br>
+
+            <div class="education">
+                <h3>Education</h3>
+                <p><strong>Bachelor of Science in Computer Science at</strong></p>
+                <p>Hamdard university, Islamabad</p>
+            </div><br>
+
+            <div class="contact">
+                <h3>contact</h3>
+                <p>Email: <a href="mailto:lfsm.maheenfayyaz@gmail.com"> lfsm.maheenfayyaz@gmail.com</a></p>
+                <p>Phone: +92 3320338607</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
